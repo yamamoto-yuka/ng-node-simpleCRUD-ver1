@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Post CRUD Form</h1>
+    <div class="form-floating mt-5">
+        <input [(ngModel)]="postID" type="text" class="form-control" placeholder="Post ID here">
+        <textarea [(ngModel)]="content" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+    <div class="btn-warraper mt-3">
+        <button type="button" class="btn btn-primary">POST</button> | <button (click)="post()" type="button" class="btn btn-secondary">GET</button> |
+        <button type="button" class="btn btn-success">PUT</button> |
+        <button type="button" class="btn btn-danger">DELETE</button>
+    </div>
+</div>
